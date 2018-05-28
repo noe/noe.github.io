@@ -6,11 +6,22 @@
     <description>Recent content in Posts on Noe Casas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy Noe Casas; 2018</copyright>
+    <copyright>&amp;copy; Noe Casas, 2018</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Notes on ICLR 2018</title>
+      <link>/post/iclr2018/</link>
+      <pubDate>Sat, 29 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/iclr2018/</guid>
+      <description>I recently attended ICLR 2018, as I had a workshop article accepted. Please, consider taking a look: A differentiable BLEU loss. Analysis and first results.
+This was the first time I attended a conference, so I tried to learn as much as I could. These are some random notes about how the conference works and what people talked about.
+How the conference works ICLR is an artificial intelligence conference that uses a double-blind peer review process via OpenReview.</description>
+    </item>
     
   </channel>
 </rss>

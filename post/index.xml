@@ -13,9 +13,28 @@
     
     
     <item>
+      <title>How to log a conference (or any event)</title>
+      <link>/post/conferencelogging/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/conferencelogging/</guid>
+      <description>I have recently started attending scientific conferences. I had the need to log what I was seeing and learning, and the ideas that came to my mind. I wanted also to take pictures of oral presentations and posters so that I could later check them out. Maybe there are better solutions out there, but I devised my own. Here I explain it.</description>
+    </item>
+    
+    <item>
+      <title>Notes on EAMT 2018</title>
+      <link>/post/eamt2018/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/eamt2018/</guid>
+      <description>I recently attended EAMT 2018 conference. It is organized by the European Association for Machine Translation. Before this conference I had only attended ICLR, which is an AI conference focused on representation learning, irrespective of the specific task or paradigm (RL, GANs, NLP, images, etc). On the other hand EAMT is purely machine translation-focused.
+This year EAMT took place over three days. The first day was focused on research, the second day on products and projects and the third one one translations (the translator track was introduced this year).</description>
+    </item>
+    
+    <item>
       <title>Notes on ICLR 2018</title>
       <link>/post/iclr2018/</link>
-      <pubDate>Sat, 29 Apr 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/iclr2018/</guid>
       <description>I recently attended ICLR 2018, as I had a workshop article accepted. Please, consider taking a look: A differentiable BLEU loss. Analysis and first results.

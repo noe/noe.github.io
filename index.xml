@@ -136,9 +136,125 @@ In charge of preparing and grading assingments and final project.&lt;/p&gt;
     </item>
     
     <item>
+      <title>How to log a conference (or any event)</title>
+      <link>/post/conferencelogging/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/conferencelogging/</guid>
+      <description>&lt;p&gt;I have recently started attending scientific conferences. I had the need to log what
+I was seeing and learning, and the ideas that came to my mind. I wanted also to
+take pictures of oral presentations and posters so that I could later check them
+out. Maybe there are better solutions out there, but I devised my own. Here I
+explain it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Notes on EAMT 2018</title>
+      <link>/post/eamt2018/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/eamt2018/</guid>
+      <description>
+
+&lt;p&gt;I recently attended &lt;a href=&#34;http://eamt2018.dlsi.ua.es/&#34; target=&#34;_blank&#34;&gt;EAMT 2018 conference&lt;/a&gt;.
+It is organized by the
+&lt;a href=&#34;http://www.eamt.org/&#34; target=&#34;_blank&#34;&gt;European Association for Machine Translation&lt;/a&gt;.
+Before this conference I had only attended &lt;a href=&#34;/post/iclr2018/&#34;&gt;ICLR&lt;/a&gt;, which is
+an AI conference focused on representation learning, irrespective of the specific
+task or paradigm (RL, GANs, NLP, images, etc). On the other hand EAMT is purely
+machine translation-focused.&lt;/p&gt;
+
+&lt;p&gt;This year EAMT took place over three days. The first day was focused on research,
+the second day on products and projects and the third one one translations
+(the translator track was introduced this year).&lt;/p&gt;
+
+&lt;p&gt;One of the recurring topics was &lt;strong&gt;translation quality evaluation&lt;/strong&gt; techniques.
+Despite BLEU is the dominant automatic measure and that to some degree it is correlated
+with human judgement, it is clear that the machine translation
+community is longing for a more grounded quality evaluation measure.
+&lt;a href=&#34;http://homepages.inf.ed.ac.uk/bhaddow/&#34; target=&#34;_blank&#34;&gt;Barry Haddow&lt;/a&gt; gave a talk about the
+&lt;a href=&#34;http://www.statmt.org/wmt18/&#34; target=&#34;_blank&#34;&gt;WMT competition&lt;/a&gt;, and commented on how, apart
+from automatic measures, they use human-driven evaluation. They
+previously used human-driven relative ranking but now they resort to
+direct assessment (human evaluator assigns a mark between 0 and 100 with
+their judgement about the degree in which the translation adequately expresses
+the meaning of the reference translation, without ever seeing the source
+sentence).&lt;/p&gt;
+
+&lt;p&gt;A piece of research that had already caught my attention and that was presented
+at EAMT was &lt;a href=&#34;https://arxiv.org/abs/1804.06189&#34; target=&#34;_blank&#34;&gt;Investigating Backtranslation in Neural Machine Translation&lt;/a&gt;.
+It explores the use of &lt;strong&gt;back-translation&lt;/strong&gt; as a means to improve translation
+performance. Back-translation consists in: you want to train a language
+direction &lt;em&gt;a ➝ b&lt;/em&gt; and you don&amp;rsquo;t have much parallel data but you have a lot
+of monolingual data in the target language &lt;em&gt;b&lt;/em&gt;, so what you do is
+training an auxiliary translation system on the &lt;em&gt;b ➝ a&lt;/em&gt; direction, and you create a synthetic
+parallel corpus by using your auxiliary system on your monolingual data.
+You now add your synthetic data to the original parallel data you had an
+&lt;em&gt;voilà&lt;/em&gt;, you can train your &lt;em&gt;a ➝ b&lt;/em&gt; system on a lot of real + synthetic parallel data.
+This is a practice that most groups and companies seem to be applying nowadays, as
+evidenced by the
+&lt;a href=&#34;http://matrix.statmt.org/?mode=all&#34; target=&#34;_blank&#34;&gt;WMT 2018 news translation task system brief descriptions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;My company, &lt;a href=&#34;http://www.lucysoftware.com/&#34; target=&#34;_blank&#34;&gt;Lucy Software&lt;/a&gt;,
+has been devising &lt;strong&gt;Rule-based Machine Translation (RBMT)&lt;/strong&gt; systems for over 30 years.
+To my delight, at EAMT I got the confirmation that RBMT
+systems are still relevant nowadays, especially for low-resource
+&lt;a href=&#34;https://www.quora.com/When-is-a-language-said-to-be-morphologically-rich&#34; target=&#34;_blank&#34;&gt;morphologically-rich&lt;/a&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Agglutinative_language&#34; target=&#34;_blank&#34;&gt;agglutinative&lt;/a&gt; languages with
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Word_order&#34; target=&#34;_blank&#34;&gt;flexible word order&lt;/a&gt;, like
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Basque_language&#34; target=&#34;_blank&#34;&gt;Basque&lt;/a&gt;,
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Turkish_language&#34; target=&#34;_blank&#34;&gt;Turkish&lt;/a&gt;
+or &lt;a href=&#34;https://en.wikipedia.org/wiki/Kazakh_language&#34; target=&#34;_blank&#34;&gt;Kazakh&lt;/a&gt;.
+My main line of research at Lucy consists in hybridizing RBMT and
+NMT to leverage the large amount of formalized linguistic knowledge in our
+rule-based systems in the form of monolingual and bilingual lexicons and grammars
+for source language analysis, source to target transfer and target language generation.
+Confirming that the linguistic knowledge in rule-based
+systems is crucial for some language pairs encourages me to pursue my RBMT-NMT
+hybrid and to test it on such type of languages.&lt;/p&gt;
+
+&lt;p&gt;As a side note, please, be aware that using BLEU to assess the performance of an
+RBMT system in comparison with SMT or NMT is unfair. This
+quality evaluation measure compares &lt;em&gt;ngram-wise&lt;/em&gt; the translation against a
+reference human translation, normally taken
+from a holdout set from a larger training corpus. The translations by SMT and NMT systems
+are expected to be similar to the reference. RBMT translations are not necessarily so
+similar to the references. Therefore, comparing RBMT against SMT and NMT on the basis
+of BLEU scores is not a sensible practice. Reviewers
+of the world, please take this into account when you ask article authors for BLEU scores.&lt;/p&gt;
+
+&lt;p&gt;In the last years, the work of many human translators has shifted from translation
+to &lt;strong&gt;post-edition of machine translations&lt;/strong&gt; due to the the increasing
+quality in machine translations. However, post-edition work is much less
+&lt;em&gt;rewarding&lt;/em&gt; to them, and it is paid less.
+It is no secret that those human translators are
+worried about how MT may affect their work in the future,
+and even fearing that its quality may reach the point where there is
+no space for human translators anymore.
+With the newly introduced &lt;em&gt;translators track&lt;/em&gt;, this year EAMT
+conference gave the machine translation community the opportunity to
+interact with human translators to get direct insight on how they
+feel about that and to try to find better synergic workflows
+involving MT and human translators. One of the conclusions of the
+translators was specially interesting: as NMT translations are very very
+fluent, post-editors need to pay more attention than with SMT not to overlook problems
+in the translated sentence.&lt;/p&gt;
+
+&lt;h2 id=&#34;random-pictures-of-posters&#34;&gt;Random Pictures of Posters&lt;/h2&gt;
+
+&lt;p&gt;Finally, these are the two posters that got my attention at the conference:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/eamt2018/euskera.jpg&#34; alt=&#34;Euskera&#34; /&gt;
+&lt;img src=&#34;/img/eamt2018/kazakh.jpg&#34; alt=&#34;Kazazh&#34; /&gt;
+&lt;img src=&#34;/img/eamt2018/toofluent.jpg&#34; alt=&#34;NMT is too fluent&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Notes on ICLR 2018</title>
       <link>/post/iclr2018/</link>
-      <pubDate>Sat, 29 Apr 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/iclr2018/</guid>
       <description>

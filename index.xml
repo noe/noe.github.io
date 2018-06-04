@@ -143,20 +143,20 @@ In charge of preparing and grading assingments and final project.&lt;/p&gt;
       <guid>/post/eamt2018/</guid>
       <description>
 
-&lt;p&gt;I recently attended &lt;a href=&#34;http://eamt2018.dlsi.ua.es/&#34; target=&#34;_blank&#34;&gt;EAMT 2018 conference&lt;/a&gt;.
-It is organized by the
+&lt;p&gt;I recently attended the
 &lt;a href=&#34;http://www.eamt.org/&#34; target=&#34;_blank&#34;&gt;European Association for Machine Translation&lt;/a&gt;.
+conference, &lt;a href=&#34;http://eamt2018.dlsi.ua.es/&#34; target=&#34;_blank&#34;&gt;EAMT 2018&lt;/a&gt;.
 Before this conference I had only attended &lt;a href=&#34;/post/iclr2018/&#34;&gt;ICLR&lt;/a&gt;, which is
 an AI conference focused on representation learning, irrespective of the specific
 task or paradigm (RL, GANs, NLP, images, etc). On the other hand EAMT is purely
 machine translation-focused.&lt;/p&gt;
 
-&lt;p&gt;This year EAMT took place over three days. The first day was focused on research,
-the second day on products and projects and the third one one translations
-(the translator track was introduced this year).&lt;/p&gt;
+&lt;p&gt;This year EAMT took place over three days. The first day was focused on research (mostly academia),
+the second day on products and projects (industry) and the third one on translators
+(translators track).&lt;/p&gt;
 
 &lt;p&gt;One of the recurring topics was &lt;strong&gt;translation quality evaluation&lt;/strong&gt; techniques.
-Despite BLEU is the dominant automatic measure and that to some degree it is correlated
+Despite BLEU being the dominant automatic measure and that to some degree it is correlated
 with human judgement, it is clear that the machine translation
 community is longing for a more grounded quality evaluation measure.
 &lt;a href=&#34;http://homepages.inf.ed.ac.uk/bhaddow/&#34; target=&#34;_blank&#34;&gt;Barry Haddow&lt;/a&gt; gave a talk about the
@@ -200,7 +200,7 @@ Confirming that the linguistic knowledge in rule-based
 systems is crucial for some language pairs encourages me to pursue my RBMT-NMT
 hybrid and to test it on such type of languages.&lt;/p&gt;
 
-&lt;p&gt;As a side note, please, be aware that using BLEU to assess the performance of an
+&lt;p&gt;As a side note, be aware that using BLEU to assess the performance of an
 RBMT system in comparison with SMT or NMT is unfair. This
 quality evaluation measure compares &lt;em&gt;ngram-wise&lt;/em&gt; the translation against a
 reference human translation, normally taken
@@ -210,7 +210,7 @@ similar to the references. Therefore, comparing RBMT against SMT and NMT on the 
 of BLEU scores is not a sensible practice. Reviewers
 of the world, please take this into account when you ask article authors for BLEU scores.&lt;/p&gt;
 
-&lt;p&gt;In the last years, the work of many human translators has shifted from translation
+&lt;p&gt;In the last years, the work of many human translators has shifted from pure translation
 to &lt;strong&gt;post-edition of machine translations&lt;/strong&gt; due to the the increasing
 quality in machine translations. However, post-edition work is much less
 &lt;em&gt;rewarding&lt;/em&gt; to them, and it is paid less.
@@ -224,8 +224,8 @@ interact with human translators to get direct insight on how they
 feel about that and to try to find better synergic workflows
 involving MT and human translators. One of the conclusions of the
 translators was specially interesting: as NMT translations are very very
-fluent, post-editors need to pay more attention than with SMT not to overlook problems
-in the translated sentence.&lt;/p&gt;
+fluent, post-editors need to pay more attention (i.e. devote more time) than with
+SMT not to overlook problems in the translated sentence.&lt;/p&gt;
 
 &lt;h2 id=&#34;random-pictures-of-posters&#34;&gt;Random Pictures of Posters&lt;/h2&gt;
 

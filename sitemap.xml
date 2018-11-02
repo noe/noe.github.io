@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/publication/wmt2018/</loc>
+      <lastmod>2018-10-29T10:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication/iclr2018/</loc>
       <lastmod>2018-03-21T15:14:10+01:00</lastmod>
     </url>
@@ -86,6 +95,16 @@
     
     <url>
     
+      <loc>/publication_types/1/</loc>
+      <lastmod>2018-10-29T10:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication_types/7/</loc>
       <lastmod>2018-03-21T15:14:10+01:00</lastmod>
       <priority>0</priority>
@@ -136,7 +155,7 @@
     <url>
     
       <loc>/publication_types/</loc>
-      <lastmod>2018-03-21T15:14:10+01:00</lastmod>
+      <lastmod>2018-10-29T10:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

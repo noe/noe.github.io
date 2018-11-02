@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>The TALP-UPC Machine Translation Systems for WMT18 News Shared Translation Task</title>
+      <link>/publication/wmt2018/</link>
+      <pubDate>Mon, 29 Oct 2018 10:00:00 +0000</pubDate>
+      
+      <guid>/publication/wmt2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A differentiable BLEU loss. Analysis and first results</title>
       <link>/publication/iclr2018/</link>
       <pubDate>Wed, 21 Mar 2018 15:14:10 +0100</pubDate>
@@ -73,11 +82,21 @@
 
 &lt;hr /&gt;
 
+&lt;h2 id=&#34;2018-2019-deep-learning-for-ai&#34;&gt;2018-2019. Deep Learning for AI&lt;/h2&gt;
+
+&lt;p&gt;Polytechnic University of Catalonia (UPC).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://telecombcn-dl.github.io/2018-dlai/&#34; target=&#34;_blank&#34;&gt;Final project instructor&lt;/a&gt;, guiding students
+with their final projects, from topic selection, deep learning framework selection,
+technical approach to follow, implementation, cloud environment setup, etc.&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;2017-2018-deep-learning-for-ai&#34;&gt;2017-2018. Deep Learning for AI&lt;/h2&gt;
 
 &lt;p&gt;Polytechnic University of Catalonia (UPC).&lt;/p&gt;
 
-&lt;p&gt;Teaching assistant at the practical sessions, &lt;a href=&#34;http://dlai.deeplearning.barcelona&#34; target=&#34;_blank&#34;&gt;including&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Teaching assistant at the practical sessions, &lt;a href=&#34;https://telecombcn-dl.github.io/2017-dlai/&#34; target=&#34;_blank&#34;&gt;including&lt;/a&gt;:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Keras and TensorBoard&lt;/li&gt;
@@ -113,7 +132,7 @@ In charge of preparing and grading assingments and final project.&lt;/p&gt;
 
 &lt;h2 id=&#34;2012-2013-probability-and-statistics&#34;&gt;2012-2013. Probability and Statistics&lt;/h2&gt;
 
-&lt;p&gt;Polytechnic University of Madrid (UPM). Same syllabus as the following entry.&lt;/p&gt;
+&lt;p&gt;Polytechnic University of Madrid (UPM). Same syllabus as the next entry.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -121,11 +140,11 @@ In charge of preparing and grading assingments and final project.&lt;/p&gt;
 
 &lt;p&gt;Polytechnic University of Madrid (UPM)&lt;/p&gt;
 
-&lt;p&gt;Part-time lecturer, teaching &lt;a href=&#34;https://www.fi.upm.es/docs/estudios/grado/1499_2012-13-GUIA-Probabilidades%20y%20Estadistica%20I_1ersemestre.pdf&#34; target=&#34;_blank&#34;&gt;syllabus&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Part-time lecturer, &lt;a href=&#34;https://www.fi.upm.es/docs/estudios/grado/1499_2012-13-GUIA-Probabilidades%20y%20Estadistica%20I_1ersemestre.pdf&#34; target=&#34;_blank&#34;&gt;teaching&lt;/a&gt;:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Descriptive statistic analysis.&lt;/li&gt;
-&lt;li&gt;Foundations of probability.&lt;/li&gt;
+&lt;li&gt;Foundations of probability theory.&lt;/li&gt;
 &lt;li&gt;Random variables, discrete and continuous.&lt;/li&gt;
 &lt;li&gt;Confidence intervals.&lt;/li&gt;
 &lt;li&gt;Hypothesis testing, parametric and non-parametric.&lt;/li&gt;

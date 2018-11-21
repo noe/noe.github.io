@@ -12,28 +12,28 @@
     
     <item>
       <title>The TALP-UPC Machine Translation Systems for WMT18 News Shared Translation Task</title>
-      <link>/publication/wmt2018/</link>
+      <link>/publication/2018_wmt_news/</link>
       <pubDate>Mon, 29 Oct 2018 10:00:00 +0000</pubDate>
       
-      <guid>/publication/wmt2018/</guid>
+      <guid>/publication/2018_wmt_news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A differentiable BLEU loss. Analysis and first results</title>
-      <link>/publication/iclr2018/</link>
+      <link>/publication/2018_iclr/</link>
       <pubDate>Wed, 21 Mar 2018 15:14:10 +0100</pubDate>
       
-      <guid>/publication/iclr2018/</guid>
+      <guid>/publication/2018_iclr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>English-Catalan Neural Machine Translation in the Biomedical Domain through the cascade approach</title>
-      <link>/publication/lrec2018/</link>
+      <link>/publication/2018_lrec/</link>
       <pubDate>Tue, 20 Mar 2018 18:26:08 +0100</pubDate>
       
-      <guid>/publication/lrec2018/</guid>
+      <guid>/publication/2018_lrec/</guid>
       <description></description>
     </item>
     
@@ -48,25 +48,45 @@
 &lt;h1 id=&#34;education&#34;&gt;Education&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;B.S. in Computer Science, Polytechnic University of Madrid (UPM), 2005&lt;/li&gt;
-&lt;li&gt;M.S. in Artificial Intelligence, Spanish Distance Education University (UNED), 2017&lt;/li&gt;
+&lt;li&gt;MSc in Artificial Intelligence, Spain National Distance Education University (UNED), 2017&lt;/li&gt;
+&lt;li&gt;BSc in Computer Science, Polytechnic University of Madrid (UPM), 2005&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;work-experience&#34;&gt;Work experience&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;2005-2016: Software engineer&lt;/p&gt;
+&lt;li&gt;2017-present: Neural Machine Translation researcher.
 
 &lt;ul&gt;
-&lt;li&gt;Company: &lt;a href=&#34;http://www.gmv.com/en/&#34; target=&#34;_blank&#34;&gt;GMV&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Company: &lt;a href=&#34;http://www.lucysoftware.com/&#34; target=&#34;_blank&#34;&gt;Lucy Software&lt;/a&gt; (&lt;a href=&#34;https://unitedlanguagegroup.com/&#34; target=&#34;_blank&#34;&gt;United Language Group&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Duties: creation of NMT platform and research on hybridization of rule-based machine translation and NMT.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;2016-2017: Data Scientist.
+
+&lt;ul&gt;
+&lt;li&gt;Companies: &lt;a href=&#34;http://www.aimsun.com/&#34; target=&#34;_blank&#34;&gt;TSS&lt;/a&gt;, &lt;a href=&#34;http://www.synergicpartners.com/en/&#34; target=&#34;_blank&#34;&gt;Synergic Partners&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Duties included: devise machine learning models and data infrastructure.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;2005-2016: Software engineer and Technical Lead.
+
+&lt;ul&gt;
+&lt;li&gt;Company: &lt;a href=&#34;http://www.gmv.com/en/&#34; target=&#34;_blank&#34;&gt;GMV&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Duties included: satellite control software development in C++, Java, Python.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;2016-2017: Data Scientist&lt;/p&gt;
+&lt;h1 id=&#34;other-skills&#34;&gt;Other skills&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Companies: &lt;a href=&#34;http://www.synergicpartners.com/en/&#34; target=&#34;_blank&#34;&gt;Synergic Partners&lt;/a&gt;, &lt;a href=&#34;http://www.aimsun.com/&#34; target=&#34;_blank&#34;&gt;TSS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Duties included: devise machine learning models and data infrastructure&lt;/li&gt;
+&lt;li&gt;Management and team leading, after leading software development teams of up to 5 people for several years.&lt;/li&gt;
+&lt;li&gt;Mentoring, after mentoring several junior software developers.&lt;/li&gt;
+&lt;li&gt;Teaching, after teaching different grade and masters courses at two different universities.&lt;/li&gt;
+&lt;li&gt;Languages:
+
+&lt;ul&gt;
+&lt;li&gt;Spanish - native&lt;/li&gt;
+&lt;li&gt;English - full working proficiency&lt;/li&gt;
+&lt;li&gt;Chinese - &lt;a href=&#34;https://en.wikipedia.org/wiki/Hanyu_Shuiping_Kaoshi&#34; target=&#34;_blank&#34;&gt;汉语水平考试&lt;/a&gt;4级&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
@@ -461,6 +481,24 @@ that it is going to become a hot topic in the upcoming years.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/img/iclr2018/myposter.jpg&#34; alt=&#34;My poster&#34; /&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Deep Deterministic Policy Gradient for Urban Traffic Light Control</title>
+      <link>/publication/2017_arxiv_drl_traffic/</link>
+      <pubDate>Wed, 01 Feb 2017 10:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017_arxiv_drl_traffic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genetic Algorithms for multimodal optimization: a review</title>
+      <link>/publication/2015_arxiv_genalg_multimodal/</link>
+      <pubDate>Wed, 01 Apr 2015 10:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_arxiv_genalg_multimodal/</guid>
+      <description></description>
     </item>
     
   </channel>

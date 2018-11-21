@@ -14,28 +14,46 @@
     
     <item>
       <title>The TALP-UPC Machine Translation Systems for WMT18 News Shared Translation Task</title>
-      <link>/publication/wmt2018/</link>
+      <link>/publication/2018_wmt_news/</link>
       <pubDate>Mon, 29 Oct 2018 10:00:00 +0000</pubDate>
       
-      <guid>/publication/wmt2018/</guid>
+      <guid>/publication/2018_wmt_news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A differentiable BLEU loss. Analysis and first results</title>
-      <link>/publication/iclr2018/</link>
+      <link>/publication/2018_iclr/</link>
       <pubDate>Wed, 21 Mar 2018 15:14:10 +0100</pubDate>
       
-      <guid>/publication/iclr2018/</guid>
+      <guid>/publication/2018_iclr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>English-Catalan Neural Machine Translation in the Biomedical Domain through the cascade approach</title>
-      <link>/publication/lrec2018/</link>
+      <link>/publication/2018_lrec/</link>
       <pubDate>Tue, 20 Mar 2018 18:26:08 +0100</pubDate>
       
-      <guid>/publication/lrec2018/</guid>
+      <guid>/publication/2018_lrec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Deterministic Policy Gradient for Urban Traffic Light Control</title>
+      <link>/publication/2017_arxiv_drl_traffic/</link>
+      <pubDate>Wed, 01 Feb 2017 10:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017_arxiv_drl_traffic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genetic Algorithms for multimodal optimization: a review</title>
+      <link>/publication/2015_arxiv_genalg_multimodal/</link>
+      <pubDate>Wed, 01 Apr 2015 10:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_arxiv_genalg_multimodal/</guid>
       <description></description>
     </item>
     

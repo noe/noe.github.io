@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.37.1" />
+  <meta name="author" content="Noe Casas">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="I recently attended the Empirical Methods in Natural Language Processing (EMNLP) conference. In this post I write about the most remarkable stuff presented there and in the co-located events, from the point of view of a neural machine translation researcher. These are just my opinions, feel free to disagree.
+Feedback is very welcome. Please leave your comments as replies to this tweet
+If, after reading this post, you want to know more about what happened at EMNLP 2018, I recommend searching for hashtag #emnlp2018 on twitter as there was plenty of live tweeting.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/emnlp2018/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Noe Casas">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Noe Casas">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/emnlp2018/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@noecasas">
+  <meta property="twitter:creator" content="@noecasas">
+  
+  <meta property="og:site_name" content="Noe Casas">
+  <meta property="og:url" content="/post/emnlp2018/">
+  <meta property="og:title" content="Notes on EMNLP 2018 | Noe Casas">
+  <meta property="og:description" content="I recently attended the Empirical Methods in Natural Language Processing (EMNLP) conference. In this post I write about the most remarkable stuff presented there and in the co-located events, from the point of view of a neural machine translation researcher. These are just my opinions, feel free to disagree.
+Feedback is very welcome. Please leave your comments as replies to this tweet
+If, after reading this post, you want to know more about what happened at EMNLP 2018, I recommend searching for hashtag #emnlp2018 on twitter as there was plenty of live tweeting.">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-11-27T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2018-11-27T00:00:00&#43;00:00">
+  
+
+  
+
+  <title>Notes on EMNLP 2018 | Noe Casas</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Noe Casas</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a href="/post">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a href="/cv">
+            
+            <span>CV</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Notes on EMNLP 2018</h1>
+
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    
+      <time datetime="2018-11-27 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
+        Nov 27, 2018
+      </time>
+    
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Noe Casas">
+  </span>
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>I recently attended the
+<a href="http://emnlp2018.org/" target="_blank">Empirical Methods in Natural Language Processing (EMNLP)</a> conference.
+In this post I write about the most remarkable stuff presented there and in the co-located
+events, from the point of view of a neural machine translation researcher. These are just
+my opinions, feel free to disagree.</p>
+
+<p>Feedback is very welcome. Please leave your comments as replies to
+<a href="https://twitter.com/noecasas/status/1058264614918635520" target="_blank">this tweet</a></p>
+
+<p>If, after reading this post, you want to know more about what happened at EMNLP 2018, I recommend
+<a href="https://twitter.com/search?q=%23emnlp2018&amp;src=typd" target="_blank">searching for hashtag #emnlp2018 on twitter</a>
+as there was plenty of live tweeting.</p>
+
+<hr />
+
+<p>Before the main conference, there were two days of co-located events. The three most interesting
+ones were the <a href="http://www.statmt.org/wmt18/" target="_blank">Conference on Machine Translation (WMT)</a>,
+the <a href="http://www.conll.org/2018" target="_blank">SIGNLL Conference on Computational Natural Language Learning (CoNLL)</a>
+and the <a href="https://blackboxnlp.github.io/" target="_blank">Blackbox NLP Workshop</a>.</p>
+
+<h2 id="wmt">WMT</h2>
+
+<p><a href="http://www.statmt.org/wmt18/" target="_blank">WMT</a> started as a workshop on statistical machine translation, with
+several shared task competitions were you could take place it. <a href="http://talp.upc.edu/" target="_blank">We</a> participated
+in the <a href="http://www.statmt.org/wmt18/translation-task.html" target="_blank"><strong>news translation shared task</strong></a>,
+specifically in Estonian-English and Finnish-English
+(<a href="http://www.aclweb.org/anthology/W18-6406" target="_blank">our system</a>).</p>
+
+<p>English to German translation, and especially the WMT14 dataset, has lately become the
+<a href="https://nlpprogress.com/english/machine_translation.html" target="_blank">standard benchmark</a> for machine
+translation quality (followed by English to French). This year&rsquo;s news translation task included
+English to German and Facebook AI Research won in that translation direction with
+<a href="https://research.fb.com/publications/understanding-back-translation-at-scale/" target="_blank">their massive use of backtranslation</a>.
+In general, the <a href="https://arxiv.org/abs/1706.03762" target="_blank">Transformer model</a> was dominant architecture in the news
+translation task, with a special mention to <a href="https://marian-nmt.github.io/" target="_blank">Marian</a> implementation,
+which seems to be gaining momentum due to its
+<a href="https://marian-nmt.github.io/features/#benchmarks" target="_blank">very high performance</a>.</p>
+
+<p>You can check the full <a href="http://aclweb.org/anthology/W18-6401.pdf" target="_blank">WMT18 news translation task findings report</a>
+for all the details of the competition.</p>
+
+<hr />
+
+<p>Apart from the news task, this year I found interesting the
+<a href="http://www.statmt.org/wmt18/parallel-corpus-filtering.html" target="_blank"><strong>noisy corpus filtering task</strong></a>.
+Partitipants were
+provided a huge corpus, for which they have to score each sentence pair. Based on the scores, the
+organization sampled one smaller and one larger subset and trained statistical and neural MT system
+and evaluated the translation quality. I think it&rsquo;s worth mentioning Microsoft&rsquo;s
+<a href="http://aclweb.org/anthology/W18-6478" target="_blank">Dual Conditional Cross-Entropy Filtering</a>, which seemed to be
+simple yet very effective.
+The full report of the corpus filtering task is <a href="http://statmt.org/wmt18/pdf/WMT081.pdf" target="_blank">here</a></p>
+
+<h2 id="conll">CoNLL</h2>
+
+<p>I could not attend <a href="http://www.conll.org/2018" target="_blank">CoNLL</a>, but I would like to mention the article
+that won the best paper award:
+<a href="http://aclweb.org/anthology/K18-1028" target="_blank">Uncovering Divergent Linguistic Information in Word Embeddings with Lessons for Intrinsic and Extrinsic Evaluation</a>,
+which proposes a method to adapt pretrained embedding vectors to work better for
+semantics/syntax tasks or for similarity/relatedness tasks.</p>
+
+<h2 id="blackbox-nlp">Blackbox NLP</h2>
+
+<p>EMNLP stands for &ldquo;Empirical Methods&hellip;&rdquo;. The incorporation of the deep learning black box into NLP has
+lead to an emphasis in the empirical part, ruling out most of the interpretability derived from
+symbolic approaches and from the modular structure of statistical methods.
+Many pieces of research just try to characterize the behaviour of models and the
+effects observed when they are subjected to
+explorative experiments, but the analyses undergone to explain them are sometimes superficial or
+are merely justified by intuition, and there are few conclusions that can be applied to contexts
+other than those very specific experiments.</p>
+
+<p><a href="https://blackboxnlp.github.io/" target="_blank">Blackbox NLP Workshop</a> tried to shed some light on
+the inner working of deep NLP models. The workshop gained a lot of attention, with
+both the oral sessions and the poster sessions being packed.</p>
+
+<p>Despite the attempts to make NLP neural networks more interpretable, I think that
+the <em>black box nature</em> of the currently dominant models imposes a hard non-interpretability wall
+that prevents us from actually understanding their behaviour completely, and hence we just can
+resort to characterizing them under different conditions.
+I hope that at some point we devise models with built-in interpretability where
+we no longer need to trade interpretability for effectiveness.</p>
+
+<h2 id="emnlp-main-conference">EMNLP: Main Conference</h2>
+
+<p>Unsupervised Statistical MT techniques were presented by the
+<a href="http://aclweb.org/anthology/D18-1399" target="_blank">Basque Country University</a>
+and by <a href="http://aclweb.org/anthology/D18-1549" target="_blank">Facebook AI Research</a>, achieving
+astonishing result without a single pair of parallel sentences.</p>
+
+<p>The trend from last conferences to try to leverage linguistic knowledge was not
+very strong at EMNLP. The most remarkable articles were
+<a href="http://aclweb.org/anthology/D18-1548" target="_blank">Linguistically-Informed Self-Attention for Semantic Role Labeling</a>
+and
+<a href="http://aclweb.org/anthology/D18-1492" target="_blank">On Tree-Based Neural Sentence Modeling</a>.</p>
+
+<p>Cross-lingual learning was also present in a lot of different articles
+presented at the conference, both regarding word embeddings, machine
+translation. You can take a look at the <a href="https://aclanthology.coli.uni-saarland.de/events/emnlp-2018" target="_blank">accepted papers</a>
+and search for &ldquo;cross-lingual&rdquo; to get an idea.</p>
+
+<p>The recent enthusiams about transfer learning with pretrained models like
+<a href="https://allennlp.org/elmo" target="_blank">ELMo</a>,
+<a href="https://arxiv.org/abs/1810.04805" target="_blank">BERT</a> and
+<a href="https://arxiv.org/abs/1801.06146" target="_blank">ULMFiT</a> was not reflected at EMNLP, but will probably do
+at next conferences, for which there&rsquo;s still time to build new systems making use of them.</p>
+
+<h2 id="summary-highlights">Summary highlights</h2>
+
+<ul>
+<li>Transformer and backtranslation are the standard machine translation toolbox.</li>
+<li>Cross-lingual and low resource scenarios are gaining momentum.</li>
+<li>Currently, unsupervised SMT works better than unsupervised NMT.</li>
+</ul>
+
+    </div>
+
+    
+
+
+    
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; Noe Casas, 2018 &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">BibTeX</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+

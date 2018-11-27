@@ -11,6 +11,131 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Notes on EMNLP 2018</title>
+      <link>/post/emnlp2018/</link>
+      <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/emnlp2018/</guid>
+      <description>
+
+&lt;p&gt;I recently attended the
+&lt;a href=&#34;http://emnlp2018.org/&#34; target=&#34;_blank&#34;&gt;Empirical Methods in Natural Language Processing (EMNLP)&lt;/a&gt; conference.
+In this post I write about the most remarkable stuff presented there and in the co-located
+events, from the point of view of a neural machine translation researcher. These are just
+my opinions, feel free to disagree.&lt;/p&gt;
+
+&lt;p&gt;Feedback is very welcome. Please leave your comments as replies to
+&lt;a href=&#34;https://twitter.com/noecasas/status/1058264614918635520&#34; target=&#34;_blank&#34;&gt;this tweet&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If, after reading this post, you want to know more about what happened at EMNLP 2018, I recommend
+&lt;a href=&#34;https://twitter.com/search?q=%23emnlp2018&amp;amp;src=typd&#34; target=&#34;_blank&#34;&gt;searching for hashtag #emnlp2018 on twitter&lt;/a&gt;
+as there was plenty of live tweeting.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Before the main conference, there were two days of co-located events. The three most interesting
+ones were the &lt;a href=&#34;http://www.statmt.org/wmt18/&#34; target=&#34;_blank&#34;&gt;Conference on Machine Translation (WMT)&lt;/a&gt;,
+the &lt;a href=&#34;http://www.conll.org/2018&#34; target=&#34;_blank&#34;&gt;SIGNLL Conference on Computational Natural Language Learning (CoNLL)&lt;/a&gt;
+and the &lt;a href=&#34;https://blackboxnlp.github.io/&#34; target=&#34;_blank&#34;&gt;Blackbox NLP Workshop&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;wmt&#34;&gt;WMT&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.statmt.org/wmt18/&#34; target=&#34;_blank&#34;&gt;WMT&lt;/a&gt; started as a workshop on statistical machine translation, with
+several shared task competitions were you could take place it. &lt;a href=&#34;http://talp.upc.edu/&#34; target=&#34;_blank&#34;&gt;We&lt;/a&gt; participated
+in the &lt;a href=&#34;http://www.statmt.org/wmt18/translation-task.html&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;news translation shared task&lt;/strong&gt;&lt;/a&gt;,
+specifically in Estonian-English and Finnish-English
+(&lt;a href=&#34;http://www.aclweb.org/anthology/W18-6406&#34; target=&#34;_blank&#34;&gt;our system&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;English to German translation, and especially the WMT14 dataset, has lately become the
+&lt;a href=&#34;https://nlpprogress.com/english/machine_translation.html&#34; target=&#34;_blank&#34;&gt;standard benchmark&lt;/a&gt; for machine
+translation quality (followed by English to French). This year&amp;rsquo;s news translation task included
+English to German and Facebook AI Research won in that translation direction with
+&lt;a href=&#34;https://research.fb.com/publications/understanding-back-translation-at-scale/&#34; target=&#34;_blank&#34;&gt;their massive use of backtranslation&lt;/a&gt;.
+In general, the &lt;a href=&#34;https://arxiv.org/abs/1706.03762&#34; target=&#34;_blank&#34;&gt;Transformer model&lt;/a&gt; was dominant architecture in the news
+translation task, with a special mention to &lt;a href=&#34;https://marian-nmt.github.io/&#34; target=&#34;_blank&#34;&gt;Marian&lt;/a&gt; implementation,
+which seems to be gaining momentum due to its
+&lt;a href=&#34;https://marian-nmt.github.io/features/#benchmarks&#34; target=&#34;_blank&#34;&gt;very high performance&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can check the full &lt;a href=&#34;http://aclweb.org/anthology/W18-6401.pdf&#34; target=&#34;_blank&#34;&gt;WMT18 news translation task findings report&lt;/a&gt;
+for all the details of the competition.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Apart from the news task, this year I found interesting the
+&lt;a href=&#34;http://www.statmt.org/wmt18/parallel-corpus-filtering.html&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;noisy corpus filtering task&lt;/strong&gt;&lt;/a&gt;.
+Partitipants were
+provided a huge corpus, for which they have to score each sentence pair. Based on the scores, the
+organization sampled one smaller and one larger subset and trained statistical and neural MT system
+and evaluated the translation quality. I think it&amp;rsquo;s worth mentioning Microsoft&amp;rsquo;s
+&lt;a href=&#34;http://aclweb.org/anthology/W18-6478&#34; target=&#34;_blank&#34;&gt;Dual Conditional Cross-Entropy Filtering&lt;/a&gt;, which seemed to be
+simple yet very effective.
+The full report of the corpus filtering task is &lt;a href=&#34;http://statmt.org/wmt18/pdf/WMT081.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;conll&#34;&gt;CoNLL&lt;/h2&gt;
+
+&lt;p&gt;I could not attend &lt;a href=&#34;http://www.conll.org/2018&#34; target=&#34;_blank&#34;&gt;CoNLL&lt;/a&gt;, but I would like to mention the article
+that won the best paper award:
+&lt;a href=&#34;http://aclweb.org/anthology/K18-1028&#34; target=&#34;_blank&#34;&gt;Uncovering Divergent Linguistic Information in Word Embeddings with Lessons for Intrinsic and Extrinsic Evaluation&lt;/a&gt;,
+which proposes a method to adapt pretrained embedding vectors to work better for
+semantics/syntax tasks or for similarity/relatedness tasks.&lt;/p&gt;
+
+&lt;h2 id=&#34;blackbox-nlp&#34;&gt;Blackbox NLP&lt;/h2&gt;
+
+&lt;p&gt;EMNLP stands for &amp;ldquo;Empirical Methods&amp;hellip;&amp;rdquo;. The incorporation of the deep learning black box into NLP has
+lead to an emphasis in the empirical part, ruling out most of the interpretability derived from
+symbolic approaches and from the modular structure of statistical methods.
+Many pieces of research just try to characterize the behaviour of models and the
+effects observed when they are subjected to
+explorative experiments, but the analyses undergone to explain them are sometimes superficial or
+are merely justified by intuition, and there are few conclusions that can be applied to contexts
+other than those very specific experiments.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blackboxnlp.github.io/&#34; target=&#34;_blank&#34;&gt;Blackbox NLP Workshop&lt;/a&gt; tried to shed some light on
+the inner working of deep NLP models. The workshop gained a lot of attention, with
+both the oral sessions and the poster sessions being packed.&lt;/p&gt;
+
+&lt;p&gt;Despite the attempts to make NLP neural networks more interpretable, I think that
+the &lt;em&gt;black box nature&lt;/em&gt; of the currently dominant models imposes a hard non-interpretability wall
+that prevents us from actually understanding their behaviour completely, and hence we just can
+resort to characterizing them under different conditions.
+I hope that at some point we devise models with built-in interpretability where
+we no longer need to trade interpretability for effectiveness.&lt;/p&gt;
+
+&lt;h2 id=&#34;emnlp-main-conference&#34;&gt;EMNLP: Main Conference&lt;/h2&gt;
+
+&lt;p&gt;Unsupervised Statistical MT techniques were presented by the
+&lt;a href=&#34;http://aclweb.org/anthology/D18-1399&#34; target=&#34;_blank&#34;&gt;Basque Country University&lt;/a&gt;
+and by &lt;a href=&#34;http://aclweb.org/anthology/D18-1549&#34; target=&#34;_blank&#34;&gt;Facebook AI Research&lt;/a&gt;, achieving
+astonishing result without a single pair of parallel sentences.&lt;/p&gt;
+
+&lt;p&gt;The trend from last conferences to try to leverage linguistic knowledge was not
+very strong at EMNLP. The most remarkable articles were
+&lt;a href=&#34;http://aclweb.org/anthology/D18-1548&#34; target=&#34;_blank&#34;&gt;Linguistically-Informed Self-Attention for Semantic Role Labeling&lt;/a&gt;
+and
+&lt;a href=&#34;http://aclweb.org/anthology/D18-1492&#34; target=&#34;_blank&#34;&gt;On Tree-Based Neural Sentence Modeling&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Cross-lingual learning was also present in a lot of different articles
+presented at the conference, both regarding word embeddings, machine
+translation. You can take a look at the &lt;a href=&#34;https://aclanthology.coli.uni-saarland.de/events/emnlp-2018&#34; target=&#34;_blank&#34;&gt;accepted papers&lt;/a&gt;
+and search for &amp;ldquo;cross-lingual&amp;rdquo; to get an idea.&lt;/p&gt;
+
+&lt;p&gt;The recent enthusiams about transfer learning with pretrained models like
+&lt;a href=&#34;https://allennlp.org/elmo&#34; target=&#34;_blank&#34;&gt;ELMo&lt;/a&gt;,
+&lt;a href=&#34;https://arxiv.org/abs/1810.04805&#34; target=&#34;_blank&#34;&gt;BERT&lt;/a&gt; and
+&lt;a href=&#34;https://arxiv.org/abs/1801.06146&#34; target=&#34;_blank&#34;&gt;ULMFiT&lt;/a&gt; was not reflected at EMNLP, but will probably do
+at next conferences, for which there&amp;rsquo;s still time to build new systems making use of them.&lt;/p&gt;
+
+&lt;h2 id=&#34;summary-highlights&#34;&gt;Summary highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Transformer and backtranslation are the standard machine translation toolbox.&lt;/li&gt;
+&lt;li&gt;Cross-lingual and low resource scenarios are gaining momentum.&lt;/li&gt;
+&lt;li&gt;Currently, unsupervised SMT works better than unsupervised NMT.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>The TALP-UPC Machine Translation Systems for WMT18 News Shared Translation Task</title>
       <link>/publication/2018_wmt_news/</link>
       <pubDate>Mon, 29 Oct 2018 10:00:00 +0000</pubDate>

@@ -120,9 +120,10 @@ translation. You can take a look at the &lt;a href=&#34;https://aclanthology.col
 and search for &amp;ldquo;cross-lingual&amp;rdquo; to get an idea.&lt;/p&gt;
 
 &lt;p&gt;The recent enthusiams about transfer learning with pretrained models like
-&lt;a href=&#34;https://allennlp.org/elmo&#34; target=&#34;_blank&#34;&gt;ELMo&lt;/a&gt;,
-&lt;a href=&#34;https://arxiv.org/abs/1810.04805&#34; target=&#34;_blank&#34;&gt;BERT&lt;/a&gt; and
-&lt;a href=&#34;https://arxiv.org/abs/1801.06146&#34; target=&#34;_blank&#34;&gt;ULMFiT&lt;/a&gt; was not reflected at EMNLP, but will probably do
+AllenNLP&amp;rsquo;s &lt;a href=&#34;https://allennlp.org/elmo&#34; target=&#34;_blank&#34;&gt;ELMo&lt;/a&gt;,
+Google&amp;rsquo;s &lt;a href=&#34;https://arxiv.org/abs/1810.04805&#34; target=&#34;_blank&#34;&gt;BERT&lt;/a&gt;,
+OpenAI&amp;rsquo;s &lt;a href=&#34;https://blog.openai.com/language-unsupervised/&#34; target=&#34;_blank&#34;&gt;GPT&lt;/a&gt; and
+FastAI&amp;rsquo;s &lt;a href=&#34;https://arxiv.org/abs/1801.06146&#34; target=&#34;_blank&#34;&gt;ULMFiT&lt;/a&gt; was not reflected at EMNLP, but will probably do
 at next conferences, for which there&amp;rsquo;s still time to build new systems making use of them.&lt;/p&gt;
 
 &lt;h2 id=&#34;summary-highlights&#34;&gt;Summary highlights&lt;/h2&gt;

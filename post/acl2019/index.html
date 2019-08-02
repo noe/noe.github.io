@@ -13,10 +13,15 @@
   
   
   
-  <meta name="description" content="PhD candidate in Neural Machine Translation, Researcher at United Language Group (ULG)">
+    
+      
+    
+  
+  <meta name="description" content="I recently attended the ACL conference. In this post I write about the most remarkable stuff presented there and in the co-located events, from the point of view of a neural machine translation researcher. These are just my opinions, feel free to disagree.
+If, after reading this post, you want to know more about what happened at ACL 2019, I recommend searching for hashtag #acl2019nlp on twitter as there was plenty of live tweeting.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/">
+  <link rel="alternate" hreflang="en-us" href="/post/acl2019/">
 
   
 
@@ -32,6 +37,13 @@
   
     
   
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
@@ -50,15 +62,15 @@
   
 
   
-  <link rel="alternate" href="/post/index.xml" type="application/rss+xml" title="Noe Casas">
-  <link rel="feed" href="/post/index.xml" type="application/rss+xml" title="Noe Casas">
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Noe Casas">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Noe Casas">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/post/">
+  <link rel="canonical" href="/post/acl2019/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -66,17 +78,20 @@
   <meta property="twitter:creator" content="@noecasas">
   
   <meta property="og:site_name" content="Noe Casas">
-  <meta property="og:url" content="/post/">
-  <meta property="og:title" content="Posts | Noe Casas">
-  <meta property="og:description" content="PhD candidate in Neural Machine Translation, Researcher at United Language Group (ULG)">
+  <meta property="og:url" content="/post/acl2019/">
+  <meta property="og:title" content="Notes on ACL 2019 | Noe Casas">
+  <meta property="og:description" content="I recently attended the ACL conference. In this post I write about the most remarkable stuff presented there and in the co-located events, from the point of view of a neural machine translation researcher. These are just my opinions, feel free to disagree.
+If, after reading this post, you want to know more about what happened at ACL 2019, I recommend searching for hashtag #acl2019nlp on twitter as there was plenty of live tweeting.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2017-01-01T00:00:00&#43;01:00">
+  <meta property="article:published_time" content="2019-08-02T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-08-02T00:00:00&#43;00:00">
   
 
   
 
-  <title>Posts | Noe Casas</title>
+  <title>Notes on ACL 2019 | Noe Casas</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -225,22 +240,15 @@
 </nav>
 
 
-
-
-
-<div class="universal-wrapper">
-
-  <h1>Posts</h1>
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   
 
-  
-  
+
+  <div class="article-container">
+    <h1 itemprop="name">Notes on ACL 2019</h1>
+
     
-    
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
 
 <div class="article-metadata">
 
@@ -264,189 +272,110 @@
   
 
   
+  
+
+  
 
 </div>
 
 
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/acl2019/" itemprop="url">Notes on ACL 2019</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>I recently attended the
+<a href="http://acl2019.org" target="_blank">ACL</a> conference.
+In this post I write about the most remarkable stuff presented there and in the co-located
+events, from the point of view of a neural machine translation researcher. These are just
+my opinions, feel free to disagree.</p>
+
+<p>If, after reading this post, you want to know more about what happened at ACL 2019, I recommend
+<a href="https://twitter.com/search?q=%23acl2019nlp&amp;src=typd" target="_blank">searching for hashtag #acl2019nlp on twitter</a>
+as there was plenty of live tweeting.</p>
+
+<hr />
+
+<p>The ACL main conference lasted three days. The day before starting there was a day devoted to
+tutorials. After the main conference, there were two days of co-located events and workshops,
+including the <a href="http://www.statmt.org/wmt19/" target="_blank">Conference on Machine Translation (WMT)</a>.</p>
+
+<p><img src="/img/acl2019/acl2019_entrance.jpg" alt="ACL" /></p>
+
+<h2 id="cross-lingual-representations">Cross-lingual Representations</h2>
+
+<p>Cross-lingual embedding mappings are gaining importance, especially their unsupervised variant,
+maybe because they are the cornerstone of unsupervised NMT. The
+Unsupervised Cross-Lingual Representation Learning tutorial
+(<a href="https://docs.google.com/presentation/d/1miPu0hkBFSRTAxP-Psg0xXOvAbVSJPhQXehMQdUI88I/edit" target="_blank">slides</a>)
+by Sebastian Ruder, Anders Søgaard and Ivan Vulić provided a very complete
+overview of the field. Oral session 7C and poster session 4B were both entirely
+devoted to multilinguality, while oral session 4A (machine translation)
+also had some unsupervised NMT papers, including
+<a href="https://www.aclweb.org/anthology/P19-1293" target="_blank">a simple and nice approach based on word-by-word translations</a>.
+I suggest you have a look at the papers at the mentioned
+sessions (see <a href="http://www.acl2019.org/EN/program.xhtml" target="_blank">program</a>)</p>
+
+<h2 id="bert">BERT</h2>
+
+<p>BERT was ubiquitous at ACL and co-located workshops. On the one hand there were a lot of
+submissions that built on top of BERT to address other tasks or setups. On the other
+hand there were a lot of &ldquo;BERTology&rdquo; submissions, at least 9 counting those
+from the main conference and those from the <a href="https://blackboxnlp.github.io/" target="_blank">Blackbox NLP workshop</a>.
+BERTology is the term used
+to refer to papers that study the properties of <a href="https://arxiv.org/abs/1810.04805" target="_blank">BERT</a>,
+usually by probing its internal representations to understand how well they capture
+morphological, syntactical or other type of information.</p>
+
+<h2 id="document-level-mt">Document-level MT</h2>
+
+<p>Document-level NMT was one of the new aspects in WMT news translation shared task. In this year&rsquo;s
+data, sentences were grouped into their originating documents. This information was ignored
+by many participants, but was very profitable for others, like the
+<a href="http://www.statmt.org/wmt19/pdf/WMT0021.pdf" target="_blank">Microsoft Translation submission</a>(
+<a href="http://www.statmt.org/wmt19/pdf/WMT0021.pdf" target="_blank">poster</a>) which used full
+documents as translation units. There were some new very interesting shared tasks in WMT,
+like the <a href="http://www.statmt.org/wmt19/ape-task.html" target="_blank">Automatic Post-Editing task</a> or the
+<a href="http://www.statmt.org/wmt19/parallel-corpus-filtering.html" target="_blank">Parallel Corpus Filtering for Low-Resource Conditions</a></p>
+
+<h2 id="translationese-back-translation">Translationese, back-translation</h2>
+
+<p>The awareness on the effects of &ldquo;translationese&rdquo; increased a lot this year in WMT.
+For one, the news shared task test sets were created so that
+the reference translations are always in the same directions as the MT
+systems are run, while in previous years the test set was 50% in each
+translation direction. Also, there were a few papers in WMT studying the effect
+of back-translation. Talk of the devil, back-translation was very present in
+the WMT research track. I especially liked the
+<a href="http://www.statmt.org/wmt19/pdf/WMT0074.pdf" target="_blank"><em>Tagged Back-Translation</em></a>
+paper, which re-interpreted the widely accepted previous beliefs on back-translation.</p>
+
+<p>ACL 2019 was a great conference. See you at the next one!</p>
+
+<h1 id="summary-highlights">Summary highlights</h1>
+
+<ul>
+<li>(Unsupervised) cross-lingual embedding representation mapping consolidates as a mainstream area.</li>
+<li>Lots of papers studying the properties of BERT or building on top of it.</li>
+<li>Document-level MT getting momentum.</li>
+<li>Translationese exists and it has its effects on MT systems.</li>
+<li>Step step further to better understand back-translation.</li>
+</ul>
+
+    </div>
+
     
-    I recently attended the ACL conference. In this post I write about the most remarkable stuff presented there and in the co-located events, from the point of view of a neural machine translation researcher. These are just my opinions, feel free to disagree.
-If, after reading this post, you want to know more about what happened at ACL 2019, I recommend searching for hashtag #acl2019nlp on twitter as there was plenty of live tweeting.
+
+
     
+    
+
+    
+
+    
+
+
   </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/acl2019/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
+</article>
 
-  
-    
-    
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    
-    
-      <time datetime="2018-11-27 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
-        Nov 27, 2018
-      </time>
-    
-  </span>
-  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Noe Casas">
-  </span>
-
-  
-
-  
-  
-
-  
-
-  
-
-</div>
-
-
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/emnlp2018/" itemprop="url">Notes on EMNLP 2018</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    I recently attended the Empirical Methods in Natural Language Processing (EMNLP) conference. In this post I write about the most remarkable stuff presented there and in the co-located events, from the point of view of a neural machine translation researcher. These are just my opinions, feel free to disagree.
-Feedback is very welcome. Please leave your comments as replies to this tweet.
-If, after reading this post, you want to know more about what happened at EMNLP 2018, I recommend searching for hashtag #emnlp2018 on twitter as there was plenty of live tweeting.
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/emnlp2018/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-  
-    
-    
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    
-    
-      <time datetime="2017-06-01 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
-        Jun 1, 2017
-      </time>
-    
-  </span>
-  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Noe Casas">
-  </span>
-
-  
-
-  
-  
-
-  
-
-  
-
-</div>
-
-
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/eamt2018/" itemprop="url">Notes on EAMT 2018</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    I recently attended the Conference of the European Association for Machine Translation, EAMT 2018. Before this conference I had only attended ICLR, which is an AI conference focused on representation learning, irrespective of the specific task or paradigm (RL, GANs, NLP, images, etc). On the other hand EAMT is purely machine translation-focused.
-This year EAMT took place over three days. The first day was focused on research (mostly academia), the second day on products and projects (industry) and the third one on translators (translators track).
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/eamt2018/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-  
-    
-    
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    
-    
-      <time datetime="2017-05-28 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
-        May 28, 2017
-      </time>
-    
-  </span>
-  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Noe Casas">
-  </span>
-
-  
-
-  
-  
-
-  
-
-  
-
-</div>
-
-
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/iclr2018/" itemprop="url">Notes on ICLR 2018</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    I recently attended ICLR 2018, as I had a workshop article accepted. Please, consider taking a look: A differentiable BLEU loss. Analysis and first results.
-This was the first time I attended a conference, so I tried to learn as much as I could. These are some random notes about how the conference works and what people talked about.
-How the conference works ICLR is an artificial intelligence conference that uses a double-blind peer review process via OpenReview.
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/iclr2018/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-  
-
-  
-
-
-</div>
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">
@@ -512,6 +441,17 @@ How the conference works ICLR is an artificial intelligence conference that uses
     
 
     
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
     
 
     

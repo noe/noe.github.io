@@ -11,6 +11,94 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Notes on ACL 2019</title>
+      <link>/post/acl2019/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/acl2019/</guid>
+      <description>
+
+&lt;p&gt;I recently attended the
+&lt;a href=&#34;http://acl2019.org&#34; target=&#34;_blank&#34;&gt;ACL&lt;/a&gt; conference.
+In this post I write about the most remarkable stuff presented there and in the co-located
+events, from the point of view of a neural machine translation researcher. These are just
+my opinions, feel free to disagree.&lt;/p&gt;
+
+&lt;p&gt;If, after reading this post, you want to know more about what happened at ACL 2019, I recommend
+&lt;a href=&#34;https://twitter.com/search?q=%23acl2019nlp&amp;amp;src=typd&#34; target=&#34;_blank&#34;&gt;searching for hashtag #acl2019nlp on twitter&lt;/a&gt;
+as there was plenty of live tweeting.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The ACL main conference lasted three days. The day before starting there was a day devoted to
+tutorials. After the main conference, there were two days of co-located events and workshops,
+including the &lt;a href=&#34;http://www.statmt.org/wmt19/&#34; target=&#34;_blank&#34;&gt;Conference on Machine Translation (WMT)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/acl2019/acl2019_entrance.jpg&#34; alt=&#34;ACL&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;cross-lingual-representations&#34;&gt;Cross-lingual Representations&lt;/h2&gt;
+
+&lt;p&gt;Cross-lingual embedding mappings are gaining importance, especially their unsupervised variant,
+maybe because they are the cornerstone of unsupervised NMT. The
+Unsupervised Cross-Lingual Representation Learning tutorial
+(&lt;a href=&#34;https://docs.google.com/presentation/d/1miPu0hkBFSRTAxP-Psg0xXOvAbVSJPhQXehMQdUI88I/edit&#34; target=&#34;_blank&#34;&gt;slides&lt;/a&gt;)
+by Sebastian Ruder, Anders Søgaard and Ivan Vulić provided a very complete
+overview of the field. Oral session 7C and poster session 4B were both entirely
+devoted to multilinguality, while oral session 4A (machine translation)
+also had some unsupervised NMT papers, including
+&lt;a href=&#34;https://www.aclweb.org/anthology/P19-1293&#34; target=&#34;_blank&#34;&gt;a simple and nice approach based on word-by-word translations&lt;/a&gt;.
+I suggest you have a look at the papers at the mentioned
+sessions (see &lt;a href=&#34;http://www.acl2019.org/EN/program.xhtml&#34; target=&#34;_blank&#34;&gt;program&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h2 id=&#34;bert&#34;&gt;BERT&lt;/h2&gt;
+
+&lt;p&gt;BERT was ubiquitous at ACL and co-located workshops. On the one hand there were a lot of
+submissions that built on top of BERT to address other tasks or setups. On the other
+hand there were a lot of &amp;ldquo;BERTology&amp;rdquo; submissions, at least 9 counting those
+from the main conference and those from the &lt;a href=&#34;https://blackboxnlp.github.io/&#34; target=&#34;_blank&#34;&gt;Blackbox NLP workshop&lt;/a&gt;.
+BERTology is the term used
+to refer to papers that study the properties of &lt;a href=&#34;https://arxiv.org/abs/1810.04805&#34; target=&#34;_blank&#34;&gt;BERT&lt;/a&gt;,
+usually by probing its internal representations to understand how well they capture
+morphological, syntactical or other type of information.&lt;/p&gt;
+
+&lt;h2 id=&#34;document-level-mt&#34;&gt;Document-level MT&lt;/h2&gt;
+
+&lt;p&gt;Document-level NMT was one of the new aspects in WMT news translation shared task. In this year&amp;rsquo;s
+data, sentences were grouped into their originating documents. This information was ignored
+by many participants, but was very profitable for others, like the
+&lt;a href=&#34;http://www.statmt.org/wmt19/pdf/WMT0021.pdf&#34; target=&#34;_blank&#34;&gt;Microsoft Translation submission&lt;/a&gt;(
+&lt;a href=&#34;http://www.statmt.org/wmt19/pdf/WMT0021.pdf&#34; target=&#34;_blank&#34;&gt;poster&lt;/a&gt;) which used full
+documents as translation units. There were some new very interesting shared tasks in WMT,
+like the &lt;a href=&#34;http://www.statmt.org/wmt19/ape-task.html&#34; target=&#34;_blank&#34;&gt;Automatic Post-Editing task&lt;/a&gt; or the
+&lt;a href=&#34;http://www.statmt.org/wmt19/parallel-corpus-filtering.html&#34; target=&#34;_blank&#34;&gt;Parallel Corpus Filtering for Low-Resource Conditions&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;translationese-back-translation&#34;&gt;Translationese, back-translation&lt;/h2&gt;
+
+&lt;p&gt;The awareness on the effects of &amp;ldquo;translationese&amp;rdquo; increased a lot this year in WMT.
+For one, the news shared task test sets were created so that
+the reference translations are always in the same directions as the MT
+systems are run, while in previous years the test set was 50% in each
+translation direction. Also, there were a few papers in WMT studying the effect
+of back-translation. Talk of the devil, back-translation was very present in
+the WMT research track. I especially liked the
+&lt;a href=&#34;http://www.statmt.org/wmt19/pdf/WMT0074.pdf&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Tagged Back-Translation&lt;/em&gt;&lt;/a&gt;
+paper, which re-interpreted the widely accepted previous beliefs on back-translation.&lt;/p&gt;
+
+&lt;p&gt;ACL 2019 was a great conference. See you at the next one!&lt;/p&gt;
+
+&lt;h1 id=&#34;summary-highlights&#34;&gt;Summary highlights&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;(Unsupervised) cross-lingual embedding representation mapping consolidates as a mainstream area.&lt;/li&gt;
+&lt;li&gt;Lots of papers studying the properties of BERT or building on top of it.&lt;/li&gt;
+&lt;li&gt;Document-level MT getting momentum.&lt;/li&gt;
+&lt;li&gt;Translationese exists and it has its effects on MT systems.&lt;/li&gt;
+&lt;li&gt;Step step further to better understand back-translation.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Leveraging rule-based machine translation knowledge for under-resourced neural machine translation models</title>
       <link>/publication/2019_mtsummit/</link>
       <pubDate>Fri, 05 Jul 2019 18:26:08 +0100</pubDate>

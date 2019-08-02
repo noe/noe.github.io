@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Notes on ACL 2019</title>
+      <link>/post/acl2019/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/acl2019/</guid>
+      <description>I recently attended the ACL conference. In this post I write about the most remarkable stuff presented there and in the co-located events, from the point of view of a neural machine translation researcher. These are just my opinions, feel free to disagree.
+If, after reading this post, you want to know more about what happened at ACL 2019, I recommend searching for hashtag #acl2019nlp on twitter as there was plenty of live tweeting.</description>
+    </item>
+    
+    <item>
       <title>Notes on EMNLP 2018</title>
       <link>/post/emnlp2018/</link>
       <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>

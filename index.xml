@@ -132,6 +132,15 @@ There are some tweets about it, though (&lt;a href=&#34;https://twitter.com/peih
     </item>
     
     <item>
+      <title>Joint source-target self attention with locality constraints</title>
+      <link>/publication/2019_joint_source_target/</link>
+      <pubDate>Wed, 01 May 2019 10:00:00 +0000</pubDate>
+      
+      <guid>/publication/2019_joint_source_target/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Notes on EMNLP 2018</title>
       <link>/post/emnlp2018/</link>
       <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
@@ -295,6 +304,7 @@ at next conferences, for which there&amp;rsquo;s still time to build new systems
 &lt;h1 id=&#34;education&#34;&gt;Education&lt;/h1&gt;
 
 &lt;ul&gt;
+&lt;li&gt;PhD in Neural Machine Translation, Polytechnic University of Catalonia (UPC), 2020&lt;/li&gt;
 &lt;li&gt;MSc in Artificial Intelligence, Spain National Distance Education University (UNED), 2017&lt;/li&gt;
 &lt;li&gt;BSc in Computer Science, Polytechnic University of Madrid (UPM), 2005&lt;/li&gt;
 &lt;/ul&gt;
@@ -302,7 +312,8 @@ at next conferences, for which there&amp;rsquo;s still time to build new systems
 &lt;h1 id=&#34;work-experience&#34;&gt;Work experience&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;2017-present: Neural Machine Translation researcher.
+&lt;li&gt;2020-present: founder at &lt;a href=&#34;www.learnik.com&#34; target=&#34;_blank&#34;&gt;Learnik&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;2017-2020: Neural Machine Translation researcher.
 
 &lt;ul&gt;
 &lt;li&gt;Company: &lt;a href=&#34;http://www.lucysoftware.com/&#34; target=&#34;_blank&#34;&gt;Lucy Software&lt;/a&gt; (&lt;a href=&#34;https://unitedlanguagegroup.com/&#34; target=&#34;_blank&#34;&gt;United Language Group&lt;/a&gt;).&lt;/li&gt;
@@ -346,6 +357,37 @@ at next conferences, for which there&amp;rsquo;s still time to build new systems
       
       <guid>/teaching/</guid>
       <description>
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;2019-2020-speech-and-language-processing-with-deep-learning&#34;&gt;2019-2020. Speech and Language Processing with Deep Learning&lt;/h2&gt;
+
+&lt;p&gt;In charge of the &lt;a href=&#34;https://www.upc.edu/content/master/guiadocent/pdf/ing/230623&#34; target=&#34;_blank&#34;&gt;practical project&lt;/a&gt;, consisting
+of training word embeddings, language models, speech classification models.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;2019-2020-introduction-to-deep-learning&#34;&gt;2019-2020. Introduction to Deep Learning&lt;/h2&gt;
+
+&lt;p&gt;In charge of &lt;a href=&#34;https://telecombcn-dl.github.io/2019-idl/&#34; target=&#34;_blank&#34;&gt;project sessions&lt;/a&gt; in Pytorch: Linear
+and logistic regression, Multilayer perceptron, Multiclass classification, ConvNets.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;2019-2020-deep-learning-for-ai&#34;&gt;2019-2020. Deep Learning for AI&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://telecombcn-dl.github.io/dlai-2019/&#34; target=&#34;_blank&#34;&gt;Final project instructor&lt;/a&gt;, guiding students in topic
+selection, deep learning framework selection, technical approach to follow, implementation, etc.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;2018-2019-natural-language-processing-with-deep-learning&#34;&gt;2018-2019. Natural Language Processing with Deep Learning&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sites.google.com/view/dlnlp2019/&#34; target=&#34;_blank&#34;&gt;Lectures&lt;/a&gt;:
+* Contextual Word Embeddings.
+* Summarization.
+* Unsupervised Neural Machine Translation.
+* Generative Adversarial Networks in NLP.&lt;/p&gt;
 
 &lt;hr /&gt;
 

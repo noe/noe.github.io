@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.85.0" />
+  <meta name="generator" content="Hugo 0.30.2" />
   <meta name="author" content="Noe Casas">
 
   
@@ -280,30 +280,35 @@ This year EAMT took place over three days. The first day was focused on research
 
 
     <div class="article-style" itemprop="articleBody">
-      <p>I recently attended the
-Conference of the <a href="http://www.eamt.org/">European Association for Machine Translation</a>,
-<a href="http://eamt2018.dlsi.ua.es/">EAMT 2018</a>.
+      
+
+<p>I recently attended the
+Conference of the <a href="http://www.eamt.org/" target="_blank">European Association for Machine Translation</a>,
+<a href="http://eamt2018.dlsi.ua.es/" target="_blank">EAMT 2018</a>.
 Before this conference I had only attended <a href="/post/iclr2018/">ICLR</a>, which is
 an AI conference focused on representation learning, irrespective of the specific
 task or paradigm (RL, GANs, NLP, images, etc). On the other hand EAMT is purely
 machine translation-focused.</p>
+
 <p>This year EAMT took place over three days. The first day was focused on research (mostly academia),
 the second day on products and projects (industry) and the third one on translators
 (translators track).</p>
+
 <p>One of the recurring topics was <strong>translation quality evaluation</strong> techniques.
 Despite BLEU being the dominant automatic measure and that to some degree it is correlated
 with human judgement, it is clear that the machine translation
 community is longing for a more grounded quality evaluation measure.
-<a href="http://homepages.inf.ed.ac.uk/bhaddow/">Barry Haddow</a> gave a talk about the
-<a href="http://www.statmt.org/wmt18/">WMT competition</a>, and commented on how, apart
+<a href="http://homepages.inf.ed.ac.uk/bhaddow/" target="_blank">Barry Haddow</a> gave a talk about the
+<a href="http://www.statmt.org/wmt18/" target="_blank">WMT competition</a>, and commented on how, apart
 from automatic measures, they use human-driven evaluation. They
 previously used human-driven relative ranking but now they resort to
 direct assessment (human evaluator assigns a mark between 0 and 100 with
 their judgement about the degree in which the translation adequately expresses
 the meaning of the reference translation, without ever seeing the source
 sentence).</p>
+
 <p>A piece of research that had already caught my attention and that was presented
-at EAMT was <a href="https://arxiv.org/abs/1804.06189">Investigating Backtranslation in Neural Machine Translation</a>.
+at EAMT was <a href="https://arxiv.org/abs/1804.06189" target="_blank">Investigating Backtranslation in Neural Machine Translation</a>.
 It explores the use of <strong>back-translation</strong> as a means to improve translation
 performance. Back-translation consists in: you want to train a language
 direction <em>a ➝ b</em> and you don&rsquo;t have much parallel data but you have a lot
@@ -314,17 +319,18 @@ You now add your synthetic data to the original parallel data you had an
 <em>voilà</em>, you can train your <em>a ➝ b</em> system on a lot of real + synthetic parallel data.
 This is a practice that most groups and companies seem to be applying nowadays, as
 evidenced by the
-<a href="http://matrix.statmt.org/?mode=all">WMT 2018 news translation task system brief descriptions</a>.</p>
-<p>My company, <a href="http://www.lucysoftware.com/">Lucy Software</a>,
+<a href="http://matrix.statmt.org/?mode=all" target="_blank">WMT 2018 news translation task system brief descriptions</a>.</p>
+
+<p>My company, <a href="http://www.lucysoftware.com/" target="_blank">Lucy Software</a>,
 has been devising <strong>Rule-based Machine Translation (RBMT)</strong> systems for over 30 years.
 To my delight, at EAMT I got the confirmation that RBMT
 systems are still relevant nowadays, especially for low-resource
-<a href="https://www.quora.com/When-is-a-language-said-to-be-morphologically-rich">morphologically-rich</a>
-<a href="https://en.wikipedia.org/wiki/Agglutinative_language">agglutinative</a> languages with
-<a href="https://en.wikipedia.org/wiki/Word_order">flexible word order</a>, like
-<a href="https://en.wikipedia.org/wiki/Basque_language">Basque</a>,
-<a href="https://en.wikipedia.org/wiki/Turkish_language">Turkish</a>
-or <a href="https://en.wikipedia.org/wiki/Kazakh_language">Kazakh</a>.
+<a href="https://www.quora.com/When-is-a-language-said-to-be-morphologically-rich" target="_blank">morphologically-rich</a>
+<a href="https://en.wikipedia.org/wiki/Agglutinative_language" target="_blank">agglutinative</a> languages with
+<a href="https://en.wikipedia.org/wiki/Word_order" target="_blank">flexible word order</a>, like
+<a href="https://en.wikipedia.org/wiki/Basque_language" target="_blank">Basque</a>,
+<a href="https://en.wikipedia.org/wiki/Turkish_language" target="_blank">Turkish</a>
+or <a href="https://en.wikipedia.org/wiki/Kazakh_language" target="_blank">Kazakh</a>.
 My main line of research at Lucy consists in hybridizing RBMT and
 NMT to leverage the large amount of formalized linguistic knowledge in our
 rule-based systems in the form of monolingual and bilingual lexicons and grammars
@@ -332,6 +338,7 @@ for source language analysis, source to target transfer and target language gene
 Confirming that the linguistic knowledge in rule-based
 systems is crucial for some language pairs encourages me to pursue my RBMT-NMT
 hybrid and to test it on such type of languages.</p>
+
 <p>As a side note, be aware that using BLEU to assess the performance of an
 RBMT system in comparison with SMT or NMT is unfair. This
 quality evaluation measure compares <em>ngram-wise</em> the translation against a
@@ -341,6 +348,7 @@ are expected to be similar to the reference. RBMT translations are not necessari
 similar to the references. Therefore, comparing RBMT against SMT and NMT on the basis
 of BLEU scores is not a sensible practice. Reviewers
 of the world, please take this into account when you ask article authors for BLEU scores.</p>
+
 <p>In the last years, the work of many human translators has shifted from pure translation
 to <strong>post-edition of machine translations</strong> due to the the increasing
 quality in machine translations. However, post-edition work is much less
@@ -357,11 +365,14 @@ involving MT and human translators. One of the conclusions of the
 translators was specially interesting: as NMT translations are very very
 fluent, post-editors need to pay more attention (i.e. devote more time) than with
 SMT not to overlook problems in the translated sentence.</p>
+
 <h2 id="random-pictures-of-posters">Random Pictures of Posters</h2>
+
 <p>Finally, these are some posters that got my attention at the conference:</p>
-<p><img src="/img/eamt2018/euskera.jpg" alt="Euskera">
-<img src="/img/eamt2018/kazakh.jpg" alt="Kazazh">
-<img src="/img/eamt2018/toofluent.jpg" alt="NMT is too fluent"></p>
+
+<p><img src="/img/eamt2018/euskera.jpg" alt="Euskera" />
+<img src="/img/eamt2018/kazakh.jpg" alt="Kazazh" />
+<img src="/img/eamt2018/toofluent.jpg" alt="NMT is too fluent" /></p>
 
     </div>
 
@@ -383,7 +394,7 @@ SMT not to overlook problems in the translated sentence.</p>
   <div class="container">
     <p class="powered-by">
 
-      © Noe Casas, 2018 &middot; 
+      &copy; Noe Casas, 2018 &middot; 
 
       Powered by the
       <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

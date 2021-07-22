@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.85.0" />
+  <meta name="generator" content="Hugo 0.30.2" />
   <meta name="author" content="Noe Casas">
 
   
@@ -282,24 +282,31 @@ How the conference works ICLR is an artificial intelligence conference that uses
 
 
     <div class="article-style" itemprop="articleBody">
-      <p>I recently attended <a href="http://iclr.cc/">ICLR 2018</a>, as I had a workshop article accepted.
+      
+
+<p>I recently attended <a href="http://iclr.cc/" target="_blank">ICLR 2018</a>, as I had a workshop article accepted.
 Please, consider taking a look:
-<a href="https://openreview.net/forum?id=HkG7hzyvf"><em>A differentiable BLEU loss. Analysis and first results</em></a>.</p>
+<a href="https://openreview.net/forum?id=HkG7hzyvf" target="_blank"><em>A differentiable BLEU loss. Analysis and first results</em></a>.</p>
+
 <p>This was the first time I
 attended a conference, so I tried to learn as much as I could. These are some
 random notes about how the conference works and what people talked about.</p>
+
 <h2 id="how-the-conference-works">How the conference works</h2>
+
 <p>ICLR is an <em>artificial intelligence</em> conference that uses a
-<a href="https://www.kdnuggets.com/2016/02/iclr-deep-learning-scientific-publishing-experiment.html">double-blind peer review process</a>
-via <a href="https://openreview.net">OpenReview</a>. Its format has changed a lot
-since its creation in <a href="https://sites.google.com/site/representationlearning2013/">2013</a>; here
+<a href="https://www.kdnuggets.com/2016/02/iclr-deep-learning-scientific-publishing-experiment.html" target="_blank">double-blind peer review process</a>
+via <a href="https://openreview.net" target="_blank">OpenReview</a>. Its format has changed a lot
+since its creation in <a href="https://sites.google.com/site/representationlearning2013/" target="_blank">2013</a>; here
 I comment on its format for 2018.</p>
+
 <p>ICLR submissions are submitted under
 two different <em>tracks</em>: <strong>conference track</strong> and <strong>workshop track</strong>. The submissions
 accepted to the conference track appear in the conference proceedings while
 the conferenfe track articles are <em>non-archival</em>. The former usually has its deadline in
 late October while the Workshop track deadline is after the acceptance decissions for
 the Conference track are out.</p>
+
 <p>Submissions to the Conference track can either be accepted,
 rejected or proposed for the Workshop track (i.e. automatic acceptance at the Workshop
 track if the authors present it there). Papers accepted for the Conference track
@@ -308,22 +315,28 @@ to the Workshop track can be accepted (either automatically for papers submitted
 Conference that got acceptance to Workshop, or because they were accepted as part of
 the Workshop track review process) or rejected. Accepted Workshop papers must present
 a poster. You can find acceptance rates from previous years
-<a href="https://medium.com/@karpathy/iclr-2017-vs-arxiv-sanity-d1488ac5c131">on the internet</a>.</p>
+<a href="https://medium.com/@karpathy/iclr-2017-vs-arxiv-sanity-d1488ac5c131" target="_blank">on the internet</a>.</p>
+
 <p>The conference takes place during 4 days. Each day there are some invited talks, a few
 oral presentations and poster sessions (in the morning and in the afternoon).
 Each accepted paper is assigned a poster session. During it, the author(s) stand next to their
 poster and explain their article to attendees that show interest in it.
 There are also company booths for promotion and hiring purposes.</p>
+
 <h2 id="what-people-talked-about">What people talked about</h2>
+
 <p>My research is about Neural Machine Translation and how to induce prior
 linguistic knowledge into translation models. The things listed in this post
 are those that caught my interest and might be very biased toward my
 interests and previous experiences.</p>
+
 <h3 id="language-modeling-and-machine-translation">Language Modeling and Machine Translation</h3>
+
 <p>There were not a lot of articles in natural language processing, but there
 were some very interesting ones.</p>
+
 <p>In my opinion, the most interesting article on Language Modeling
-was <a href="https://openreview.net/forum?id=HkwZSG-CZ">Breaking the Softmax Bottleneck</a>,
+was <a href="https://openreview.net/forum?id=HkwZSG-CZ" target="_blank">Breaking the Softmax Bottleneck</a>,
 which reformulates LM as a matrix factorisation and
 identifies a that the rank of the result of the softmax
 is much lower than it would be needed for language modelling, and
@@ -333,114 +346,140 @@ their reserves in the effectiveness of their method when applied
 to neural machine translation, as the matrix factorisation formulation
 was not suitable in that case. This article built their LM on the sota
 LM implementation from
-<a href="https://openreview.net/forum?id=SyyGPP0TZ">Regularizing and Optimizing LSTM Language Models</a>.</p>
+<a href="https://openreview.net/forum?id=SyyGPP0TZ" target="_blank">Regularizing and Optimizing LSTM Language Models</a>.</p>
+
 <p>The most remarkable articles about Neural Machine translation were in my
 opinion the parallel submissions about Unsupervised Machine Translation
 by the University of the Basque Country
-(<a href="https://openreview.net/forum?id=Sy2ogebAW">Unsupervised Neural Machine Translation</a>)
+(<a href="https://openreview.net/forum?id=Sy2ogebAW" target="_blank">Unsupervised Neural Machine Translation</a>)
 and Facebook
-(<a href="https://openreview.net/forum?id=rkYTTf-AZ">Unsupervised Machine Translation Using Monolingual Corpora Only</a>).
+(<a href="https://openreview.net/forum?id=rkYTTf-AZ" target="_blank">Unsupervised Machine Translation Using Monolingual Corpora Only</a>).
 Both propose similar ideas: using multi-task learning with (denoising) auto-encoding and
 backtranslation as subtasks, being the main difference the fact that the latter relies
 on adversarial training to align internal representations while the former relies
 on pre-computed cross-lingual word embeddings (also created from monolingual data).</p>
+
 <h3 id="generative-adversarial-networks">Generative Adversarial Networks</h3>
+
 <p>Since they were proposed in 2014, GANs have been widening their adoption
 and increasing their momentum year after year. In ICLR 2018, despite not being a lot
 of GAN papers, there were enough to make me think that GANs are going remain as
 one of the main research topics in deep learning at least for a few more years.</p>
+
 <p>Morning oral presentations from day #1 were devoted to GANs. One of them
-<a href="https://twitter.com/noecasas/status/991129366858948608">impressed me</a>, not only because
+<a href="https://twitter.com/noecasas/status/991129366858948608" target="_blank">impressed me</a>, not only because
 of its amazing results but also because of the presentation style. It was the talk by
-<a href="https://scholar.google.es/citations?user=-50qJW8AAAAJ">Tero Karras</a> from Nvidia
+<a href="https://scholar.google.es/citations?user=-50qJW8AAAAJ" target="_blank">Tero Karras</a> from Nvidia
 about progressively growing GANs. His slides had fully automatic slide transitions
 (he did not press any button) and he was giving his speech as the slides were
 transitionining with perfect timing and using a was super calmed and clear discourse.</p>
+
 <p>The posters about GANs I liked most were
-<a href="https://openreview.net/forum?id=ByOExmWAb">MaskGAN</a>,
-<a href="https://openreview.net/forum?id=rkTS8lZAb">Boundary Seeking GANs</a>
+<a href="https://openreview.net/forum?id=ByOExmWAb" target="_blank">MaskGAN</a>,
+<a href="https://openreview.net/forum?id=rkTS8lZAb" target="_blank">Boundary Seeking GANs</a>
 and
-<a href="https://openreview.net/forum?id=BkeqO7x0-">Unsupervised Cipher Cracking Using Discrete GANs</a>
+<a href="https://openreview.net/forum?id=BkeqO7x0-" target="_blank">Unsupervised Cipher Cracking Using Discrete GANs</a>
 , all of them attempting
 to apply GANs to discrete sequences.</p>
+
 <p>Though not about GANs, there was an intriguing workshop paper proposing a technique
-called <a href="https://openreview.net/forum?id=BJPlJVywz"><em>Non-Adversarial Matching</em></a>
+called <a href="https://openreview.net/forum?id=BJPlJVywz" target="_blank"><em>Non-Adversarial Matching</em></a>
 that aims at tasks similar to those addressed with
-<a href="https://arxiv.org/abs/1703.10593">CycleGANs</a> but without needing
+<a href="https://arxiv.org/abs/1703.10593" target="_blank">CycleGANs</a> but without needing
 adversarial training.</p>
+
 <h3 id="graph-neural-networks">Graph Neural Networks</h3>
+
 <p>Several articles where about graph neural networks, both applied to
 supervised and reinforcement learning. It seems
 more and more people want to exploit graph structures in their problems.
-The article I liked most was <a href="https://openreview.net/forum?id=rJXMpikCZ">Graph Attention Networks</a>,
+The article I liked most was <a href="https://openreview.net/forum?id=rJXMpikCZ" target="_blank">Graph Attention Networks</a>,
 which proposed a self-attention mechanism over graph structures.</p>
+
 <p>A special mention is the application of neural networks for graph
 generation in computational chemistry, like the
-<a href="https://openreview.net/forum?id=SyqShMZRb">Syntax-Directed Variational Autoencoder for Structured Data</a>,
+<a href="https://openreview.net/forum?id=SyqShMZRb" target="_blank">Syntax-Directed Variational Autoencoder for Structured Data</a>,
 which externalises the generation itself to an external formal grammar.</p>
+
 <h3 id="deep-rl-and-policy-gradient-methods">Deep RL and Policy gradient methods</h3>
+
 <p>After the success of AlphaGo, the RL trend went up. However, the need
 for extensive hyperparameter search made it
 not permeate much to universities where you cannot afford having
 hundreds of GPUs computing during weeks to train a model, even though
-<a href="https://deepmind.com/blog/population-based-training-neural-networks/">Population-Based Training</a>
+<a href="https://deepmind.com/blog/population-based-training-neural-networks/" target="_blank">Population-Based Training</a>
 has reduced notably the amount of needed processing.</p>
+
 <p>An article I liked was
-<a href="https://openreview.net/forum?id=SyzKd1bCW"><em>Backpropagation through the Void: Optimizing control variates for black-box gradient estimation</em></a>. It proposes an unbiased gradient estimator for stochastic nodes
+<a href="https://openreview.net/forum?id=SyzKd1bCW" target="_blank"><em>Backpropagation through the Void: Optimizing control variates for black-box gradient estimation</em></a>. It proposes an unbiased gradient estimator for stochastic nodes
 in a computational graph, like
-<a href="http://www-anw.cs.umass.edu/~barto/courses/cs687/williams92simple.pdf">REINFORCE</a>
+<a href="http://www-anw.cs.umass.edu/~barto/courses/cs687/williams92simple.pdf" target="_blank">REINFORCE</a>
 but with a control variate, with much better results than
-<a href="https://openreview.net/forum?id=ryBDyehOl">REBAR</a>.</p>
+<a href="https://openreview.net/forum?id=ryBDyehOl" target="_blank">REBAR</a>.</p>
+
 <p>Apart from that one, there were other articles proposing strategies to reduce the variance
 of gradient estimators by defining baselines and control variates, including
-an <a href="https://iclr.cc/Conferences/2018/Schedule?showEvent=393">oral presentation</a>. However, one
+an <a href="https://iclr.cc/Conferences/2018/Schedule?showEvent=393" target="_blank">oral presentation</a>. However, one
 of the most interesting articles on that topic to me was workshop paper
-<a href="https://openreview.net/forum?id=HyL0IKJwM">The Mirage of Action-Dependent Baselines in Reinforcement Learning</a>,
+<a href="https://openreview.net/forum?id=HyL0IKJwM" target="_blank">The Mirage of Action-Dependent Baselines in Reinforcement Learning</a>,
 which finds that RL action variance reduction algorithms from the
 literature (and also some of the articles presented at ICLR 2018)
 are subtly wrong in their claims, as they don&rsquo;t reduce variance
 but trade it for bias due to implementation bugs.
 Note that this conclusion only refers to action-dependent variance
 reduction.</p>
+
 <h3 id="reproducibility">Reproducibility</h3>
+
 <p>If you have done deep reinforcement learning, you probably experienced
 yourself that algorithms which on paper are exceedingly performant,
 present very poor convergence and are very sensible to hyperparameter
-selection. In <a href="https://iclr.cc/Conferences/2018/Schedule?showEvent=346">her invited talk</a>,
-<a href="https://scholar.google.com/citations?user=CEt6_mMAAAAJ">Joelle Pineau</a>
+selection. In <a href="https://iclr.cc/Conferences/2018/Schedule?showEvent=346" target="_blank">her invited talk</a>,
+<a href="https://scholar.google.com/citations?user=CEt6_mMAAAAJ" target="_blank">Joelle Pineau</a>
 talked about this, with references to her previous work in
-(<a href="https://arxiv.org/abs/1709.06560">Henderson et al., 2017</a>).</p>
+(<a href="https://arxiv.org/abs/1709.06560" target="_blank">Henderson et al., 2017</a>).</p>
+
 <p>Problems in reproducibility of scientific claims in machine learning seem to be
 not restricted only to deep RL, but to be
 part of a general <em>reproducibility crisis</em>. In order to mitigate it,
 she advocated for releasing source code and being fair when reporting
 results (e.g. not reporting only the best top K performant runs of
 a deep RL algorotithm, as they are evidently biased).</p>
+
 <p>Part of her efforts to increase awareness about lack of reproducibility were poured on the
-<a href="https://www.cs.mcgill.ca/~jpineau/ICLR2018-ReproducibilityChallenge.html">ICLR 2018 Reproducibility Challenge</a>
+<a href="https://www.cs.mcgill.ca/~jpineau/ICLR2018-ReproducibilityChallenge.html" target="_blank">ICLR 2018 Reproducibility Challenge</a>
 that she coordinated this year. Some of the participants engaged in useful discussions
 with the authors of the articles they were trying to reproduce and led
 authors to improve on the clarity of their texts.</p>
+
 <h3 id="source-code-synthesis-and-related-tasks">Source code synthesis and related tasks</h3>
+
 <p>There were several articles about source code synthesis and other tasks
 related to source code, like bug detection based on graphs.
-<a href="https://medium.com/@ilblackdragon/program-synthesis-papers-at-iclr-2018-3d3fd3b24464">Here</a>
+<a href="https://medium.com/@ilblackdragon/program-synthesis-papers-at-iclr-2018-3d3fd3b24464" target="_blank">Here</a>
 you can find a blog post devoted to this subset of ICLR 2018 papers.</p>
+
 <h3 id="meta-learning-and-architecture-search">Meta-learning and Architecture Search</h3>
+
 <p>It is totally unrelated to my research area, but I had the impression that,
 despite being very incipient yet,
 the interest in meta-learning and architecture search has increased a lot and
 that it is going to become a hot topic in the upcoming years.</p>
+
 <h2 id="random-pictures-of-posters">Random Pictures of Posters</h2>
+
 <p>Finally, this is a random selection of pictures of posters I took at the conference:</p>
-<p><img src="/img/iclr2018/cypherGAN.jpg" alt="CypherGAN">
-<img src="/img/iclr2018/baselines.jpg" alt="Mirage of action-dependent baselines">
-<img src="/img/iclr2018/graphattention.jpg" alt="Graph Attention Nets">
-<img src="/img/iclr2018/latentconstraints.jpg" alt="Latent Constraints ">
-<img src="/img/iclr2018/softmax.jpg" alt="Softmax Bottleneck">
-<img src="/img/iclr2018/void.jpg" alt="Backpropagation through the void"></p>
+
+<p><img src="/img/iclr2018/cypherGAN.jpg" alt="CypherGAN" />
+<img src="/img/iclr2018/baselines.jpg" alt="Mirage of action-dependent baselines" />
+<img src="/img/iclr2018/graphattention.jpg" alt="Graph Attention Nets" />
+<img src="/img/iclr2018/latentconstraints.jpg" alt="Latent Constraints " />
+<img src="/img/iclr2018/softmax.jpg" alt="Softmax Bottleneck" />
+<img src="/img/iclr2018/void.jpg" alt="Backpropagation through the void" /></p>
+
 <p>Shameless self promotion&hellip;this is my poster:</p>
-<p><img src="/img/iclr2018/myposter.jpg" alt="My poster"></p>
+
+<p><img src="/img/iclr2018/myposter.jpg" alt="My poster" /></p>
 
     </div>
 
@@ -462,7 +501,7 @@ that it is going to become a hot topic in the upcoming years.</p>
   <div class="container">
     <p class="powered-by">
 
-      © Noe Casas, 2018 &middot; 
+      &copy; Noe Casas, 2018 &middot; 
 
       Powered by the
       <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

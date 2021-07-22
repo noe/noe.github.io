@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.85.0" />
+  <meta name="generator" content="Hugo 0.30.2" />
   <meta name="author" content="Noe Casas">
 
   
@@ -280,50 +280,64 @@ If, after reading this post, you want to know more about what happened at ACL 20
 
 
     <div class="article-style" itemprop="articleBody">
-      <p>I recently attended the
-<a href="http://acl2019.org">ACL</a> conference.
+      
+
+<p>I recently attended the
+<a href="http://acl2019.org" target="_blank">ACL</a> conference.
 In this post I write about the most remarkable stuff presented there and in the co-located
 events, from the point of view of a neural machine translation researcher. These are just
 my opinions, feel free to disagree.</p>
+
 <p>If, after reading this post, you want to know more about what happened at ACL 2019, I recommend
-<a href="https://twitter.com/search?q=%23acl2019nlp&amp;src=typd">searching for hashtag #acl2019nlp on twitter</a>
+<a href="https://twitter.com/search?q=%23acl2019nlp&amp;src=typd" target="_blank">searching for hashtag #acl2019nlp on twitter</a>
 as there was plenty of live tweeting.</p>
-<hr>
+
+<hr />
+
 <p>The ACL main conference lasted three days. The day before starting there was a day devoted to
 tutorials. After the main conference, there were two days of co-located events and workshops,
-including the <a href="http://www.statmt.org/wmt19/">Conference on Machine Translation (WMT)</a>.</p>
-<p><img src="/img/acl2019/acl2019_entrance.jpg" alt="ACL"></p>
+including the <a href="http://www.statmt.org/wmt19/" target="_blank">Conference on Machine Translation (WMT)</a>.</p>
+
+<p><img src="/img/acl2019/acl2019_entrance.jpg" alt="ACL" /></p>
+
 <h2 id="cross-lingual-representations">Cross-lingual Representations</h2>
+
 <p>Cross-lingual embedding mappings are gaining importance, especially their unsupervised variant,
 maybe because they are the cornerstone of unsupervised NMT. The
 Unsupervised Cross-Lingual Representation Learning tutorial
-(<a href="https://docs.google.com/presentation/d/1miPu0hkBFSRTAxP-Psg0xXOvAbVSJPhQXehMQdUI88I/edit">slides</a>)
+(<a href="https://docs.google.com/presentation/d/1miPu0hkBFSRTAxP-Psg0xXOvAbVSJPhQXehMQdUI88I/edit" target="_blank">slides</a>)
 by Sebastian Ruder, Anders Søgaard and Ivan Vulić provided a very complete
 overview of the field. Oral session 7C and poster session 4B were both entirely
 devoted to multilinguality, while oral session 4A (machine translation)
 also had some unsupervised NMT papers, including
-<a href="https://www.aclweb.org/anthology/P19-1293">a simple and nice approach based on word-by-word translations</a>.
+<a href="https://www.aclweb.org/anthology/P19-1293" target="_blank">a simple and nice approach based on word-by-word translations</a>.
 I suggest you have a look at the papers at the mentioned
-sessions (see <a href="http://www.acl2019.org/EN/program.xhtml">program</a>)</p>
+sessions (see <a href="http://www.acl2019.org/EN/program.xhtml" target="_blank">program</a>)</p>
+
 <h2 id="bert">BERT</h2>
+
 <p>BERT was ubiquitous at ACL and co-located workshops. On the one hand there were a lot of
 submissions that built on top of BERT to address other tasks or setups. On the other
 hand there were a lot of &ldquo;BERTology&rdquo; submissions, at least 9 counting those
-from the main conference and those from the <a href="https://blackboxnlp.github.io/">Blackbox NLP workshop</a>.
+from the main conference and those from the <a href="https://blackboxnlp.github.io/" target="_blank">Blackbox NLP workshop</a>.
 BERTology is the term used
-to refer to papers that study the properties of <a href="https://arxiv.org/abs/1810.04805">BERT</a>,
+to refer to papers that study the properties of <a href="https://arxiv.org/abs/1810.04805" target="_blank">BERT</a>,
 usually by probing its internal representations to understand how well they capture
 morphological, syntactical or other type of information.</p>
+
 <h2 id="document-level-mt">Document-level MT</h2>
+
 <p>Document-level NMT was one of the new aspects in WMT news translation shared task. In this year&rsquo;s
 data, sentences were grouped into their originating documents. This information was ignored
 by many participants, but was very profitable for others, like the
-<a href="http://www.statmt.org/wmt19/pdf/WMT0021.pdf">Microsoft Translation submission</a>(
-<a href="http://www.statmt.org/wmt19/pdf/WMT0021.pdf">poster</a>) which used full
+<a href="http://www.statmt.org/wmt19/pdf/WMT0021.pdf" target="_blank">Microsoft Translation submission</a>(
+<a href="http://www.statmt.org/wmt19/pdf/WMT0021.pdf" target="_blank">poster</a>) which used full
 documents as translation units. There were some new very interesting shared tasks in WMT,
-like the <a href="http://www.statmt.org/wmt19/ape-task.html">Automatic Post-Editing task</a> or the
-<a href="http://www.statmt.org/wmt19/parallel-corpus-filtering.html">Parallel Corpus Filtering for Low-Resource Conditions</a></p>
+like the <a href="http://www.statmt.org/wmt19/ape-task.html" target="_blank">Automatic Post-Editing task</a> or the
+<a href="http://www.statmt.org/wmt19/parallel-corpus-filtering.html" target="_blank">Parallel Corpus Filtering for Low-Resource Conditions</a></p>
+
 <h2 id="translationese-back-translation">Translationese, back-translation</h2>
+
 <p>The awareness on the effects of &ldquo;translationese&rdquo; increased a lot this year in WMT.
 For one, the news shared task test sets were created so that
 the reference translations are always in the same directions as the MT
@@ -331,26 +345,28 @@ systems are run, while in previous years the test set was 50% in each
 translation direction. Also, there were a few papers in WMT studying the effect
 of back-translation. Talk of the devil, back-translation was very present in
 the WMT research track. I especially liked the
-<a href="http://www.statmt.org/wmt19/pdf/WMT0074.pdf"><em>Tagged Back-Translation</em></a>
+<a href="http://www.statmt.org/wmt19/pdf/WMT0074.pdf" target="_blank"><em>Tagged Back-Translation</em></a>
 paper, which re-interpreted the widely accepted previous beliefs on back-translation.</p>
+
 <p>ACL 2019 was a great conference. See you at the next one!</p>
-<h2 id="talks-i-would-have-loved-to-attend-but-couldnt">Talks I would have loved to attend but couldn&rsquo;t</h2>
+
+<h2 id="talks-i-would-have-loved-to-attend-but-couldn-t">Talks I would have loved to attend but couldn&rsquo;t</h2>
+
 <ul>
-<li>
-<p><a href="https://sites.google.com/view/repl4nlp2019/schedule?authuser=0#h.p_s8QEaqlo0grw"><em>Modeling Output Spaces in Continuous-Output Language Generation</em></a>,
-by Yulia Tsvetkov, in the <a href="https://sites.google.com/view/repl4nlp2019">Workshop on Representation Learning for NLP (RepL4NLP)</a>
-. Fortunately, <a href="https://twitter.com/hadyelsahar/status/1157263947491356677">here</a> and
-<a href="https://twitter.com/seb_ruder/status/1157265985897992192?s=19">here</a> there are
-twitter threads with summaries of the talk</p>
-</li>
-<li>
-<p><a href="https://sites.google.com/view/nlp4convai/program?authuser=0#h.p_yXEftNMfqGUR"><em>The Curious Case of Degenerate Neural Conversation</em></a>
-by Yejin Choi, in the <a href="https://sites.google.com/view/nlp4convai/">NLP for Conversational AI workshop</a>.
-There are some tweets about it, though (<a href="https://twitter.com/peihaosu/status/1156900308930502656">1</a>,
-<a href="https://twitter.com/mihail_eric/status/1156899683282968576">2</a>, <a href="https://twitter.com/irodov_rg/status/1156902499493785601">3</a>).</p>
-</li>
+<li><p><a href="https://sites.google.com/view/repl4nlp2019/schedule?authuser=0#h.p_s8QEaqlo0grw" target="_blank"><em>Modeling Output Spaces in Continuous-Output Language Generation</em></a>,
+by Yulia Tsvetkov, in the <a href="https://sites.google.com/view/repl4nlp2019" target="_blank">Workshop on Representation Learning for NLP (RepL4NLP)</a>
+. Fortunately, <a href="https://twitter.com/hadyelsahar/status/1157263947491356677" target="_blank">here</a> and
+<a href="https://twitter.com/seb_ruder/status/1157265985897992192?s=19" target="_blank">here</a> there are
+twitter threads with summaries of the talk</p></li>
+
+<li><p><a href="https://sites.google.com/view/nlp4convai/program?authuser=0#h.p_yXEftNMfqGUR" target="_blank"><em>The Curious Case of Degenerate Neural Conversation</em></a>
+by Yejin Choi, in the <a href="https://sites.google.com/view/nlp4convai/" target="_blank">NLP for Conversational AI workshop</a>.
+There are some tweets about it, though (<a href="https://twitter.com/peihaosu/status/1156900308930502656" target="_blank">1</a>,
+<a href="https://twitter.com/mihail_eric/status/1156899683282968576" target="_blank">2</a>, <a href="https://twitter.com/irodov_rg/status/1156902499493785601" target="_blank">3</a>).</p></li>
 </ul>
+
 <h1 id="summary-highlights">Summary highlights</h1>
+
 <ul>
 <li>(Unsupervised) cross-lingual embedding representation mapping consolidates as a mainstream area.</li>
 <li>Lots of papers studying the properties of BERT or building on top of it.</li>
@@ -379,7 +395,7 @@ There are some tweets about it, though (<a href="https://twitter.com/peihaosu/st
   <div class="container">
     <p class="powered-by">
 
-      © Noe Casas, 2018 &middot; 
+      &copy; Noe Casas, 2018 &middot; 
 
       Powered by the
       <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
